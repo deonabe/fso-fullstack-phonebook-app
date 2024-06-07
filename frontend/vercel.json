@@ -1,16 +1,10 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "./dist",
-        "use": "@vercel/node"
-      }
-    ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
+        {
+            "src": "/api/(.*)",
+            "dest": "https://fso-fullstack-phonebook-app-backend.vercel.app"
+        }
     ]
   }
   
